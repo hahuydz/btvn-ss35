@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    height: fit-content;
+    padding: 15px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-bookmark{
+    padding: 15px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgb(51, 224, 255);
+    color: white;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+}
+
+.modal-add{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    width: 500px;
+    color: white;
+}
+
+.modal-add .modal-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #7C59B0;
+    align-items: center;
+}
+
+.modal-add .modal-header .exit-modal{
+    font-size: 20px;
+}
+
+.modal-add .modal-header .exit-modal:hover{
+    cursor: pointer;
+}
+
+.modal-add #form-add-bookmark{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.inputCss{
+    width: 80%;
+    border-radius: 8px;
+    height: 30px;
+    border: 1px solid #7C59B0;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.nameLabel{
+    width: 100%;
+    margin-right: auto;
+    margin-left: 50px;
+    color: #7C59B0;
+}
+
+#btn-save{
+    margin: 20px 0;
+    padding: 8px 35px;
+    margin-right: auto;
+    margin-left: 50px;
+    border-radius: 8px;
+    background-color: #7C59B0;
+    color: white;
+    border-style: none;
+}
+
+#listBookMark{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+#listBookMark .item{
+    flex-basis: calc(100% / 2 - 10px);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+#listBookMark .item .delete-item{
+    font-size: 20px;
+    color: white;
+    align-self: flex-end;
+}
+
+#listBookMark .item .delete-item:hover{
+    cursor: pointer;
+}
+
+#listBookMark .item .title-item{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
