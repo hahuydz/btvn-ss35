@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai4ss35</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: lightgray;
+        }
+        .pagination {
+            margin-top: 10px;
+        }
+        .pagination button {
+            padding: 5px 10px;
+            margin: 2px;
+            cursor: pointer;
+        }
+        .active {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Danh sách nhân viên</h2>
+
+    <input type="text" id="nameInput" placeholder="Tên nhân viên">
+    <input type="text" id="roleInput" placeholder="Chức vụ">
+    <button onclick="addEmployee()">Thêm nhân viên</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Chức vụ</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTable"></tbody>
+    </table>
+
+    <div class="pagination">
+        <button onclick="prevPage()">Previous</button>
+        <span id="pageNumbers"></span>
+        <button onclick="nextPage()">Next</button>
+    </div>
+    <script src="./b4.js"></script>
+</body>
+</html>
