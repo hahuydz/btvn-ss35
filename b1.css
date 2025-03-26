@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.container .input-group{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+}
+
+#task-input{
+    width: 30%;
+}
+
+#taskList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.taskItem{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #dadada;
+    margin: 0 auto;
+}
